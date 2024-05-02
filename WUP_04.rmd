@@ -52,11 +52,18 @@ GSS = read.csv("GSScsv.csv")
 boxplot(WORDSUM~DEGREE, data=GSS)
 ```
 
-From this boxplot it shows that there is a difference with every median value between very degree within LT high School. The lowest degree has a value of 8 and the median value conatains a value of 11. 
+From this boxplot it shows that there is a difference with every median value between very degree within LT high School. The lowest degree has a value of 8 and the median value contains a value of 11. 
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(WORDSUM~DEGREE,data=data)
+```
+
+There is a difference in the mean based on the degree with the lowest being the LT Hgh School with the average score of 7.75 which compares to the graduate which contains an average score of 10.09. 
+
 
 ## Inferential Results
 
